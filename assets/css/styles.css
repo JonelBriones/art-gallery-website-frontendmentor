@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+img,
+svg {
+  max-width: 100%;
+}
+:root {
+  --color-gold: rgb(213, 150, 108);
+  --color-almost-black: rgb(21, 21, 21);
+  --color-dark-grey: rgb(68, 68, 68);
+}
+h1,
+h2 {
+  font-family: "Big Shoulders Display";
+}
+p,
+a {
+  font-family: "Outfit";
+  font-size: 1.125rem;
+  line-height: 1.7rem;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+}
+footer p {
+  color: white;
+  width: 430px;
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+.social-icon svg {
+}
+.social-icon svg:hover path {
+  fill: var(--color-gold);
+}
