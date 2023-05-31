@@ -90,14 +90,84 @@ header {
   background-color: var(--color-gold);
   border-right: 50px solid var(--color-almost-black);
 }
-/* FOOTER */
 
+/* GALLERY SECTION */
+section {
+  padding-block: 10rem;
+  place-content: center;
+}
+.grid {
+  display: grid;
+  width: 80%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 40% 17% 40%;
+  gap: 1rem;
+  margin: auto;
+}
+article:first-child {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+article:first-child h2 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 3.75rem;
+  text-transform: uppercase;
+  width: 350px;
+}
+article:first-child p {
+  font-size: 1.375rem;
+  line-height: 2em;
+  width: 320px;
+}
+article:last-child {
+  background-color: var(--color-almost-black);
+  padding: 2rem;
+}
+article:last-child h2 {
+  color: white;
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 3.75rem;
+}
+article:last-child p {
+  color: white;
+  font-size: 1.375rem;
+  line-height: 2rem;
+}
+section div > img,
+section article {
+  width: 100%;
+  height: 100%;
+}
+#box2 {
+  grid-column: 2 / 4;
+  object-fit: cover;
+}
+#box3 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+#box5 {
+  height: 100%;
+  grid-column: 3 / 4;
+}
+/* FOOTER */
 footer {
   background-color: black;
+  padding-block: 4rem;
+}
+footer .flex {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 4rem;
+  margin: auto;
+}
+.footer-logo {
+  height: 58px;
+  width: auto;
 }
 footer p {
   color: white;
