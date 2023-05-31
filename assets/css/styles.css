@@ -66,8 +66,9 @@ header {
   color: var(--color-dark-grey);
   width: 290px;
 }
+
 .header-location-btn {
-  width: 204px;
+  width: 260px;
   height: 72px;
   position: relative;
 }
@@ -85,6 +86,11 @@ header {
   align-items: center;
   border: none;
   border-right: 50px solid var(--color-gold);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Big Shoulders Display";
+  letter-spacing: 3.64px;
+  font-size: 1.25rem;
 }
 .header-location-btn p:hover {
   background-color: var(--color-gold);
