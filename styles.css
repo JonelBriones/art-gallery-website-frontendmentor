@@ -29,12 +29,10 @@ a {
 /* HEADER */
 header {
   display: flex;
-  height: 100vh;
 }
 .black-bg {
   background-color: black;
   width: 450px;
-  /* position: relative; */
 }
 .header-content-container {
   position: absolute;
@@ -183,8 +181,102 @@ ul {
   display: flex;
   gap: 1rem;
 }
-.social-icon svg {
-}
 .social-icon svg:hover path {
   fill: var(--color-gold);
+}
+
+/* - Tablet: 768px 48rem */
+@media (min-width: 32.05rem) and (max-width: 48rem) {
+  header {
+    height: 100%;
+  }
+  .grid,
+  footer .flex {
+    width: 90%;
+  }
+  .grid {
+  }
+  .black-bg {
+    display: none;
+  }
+  header {
+    position: relative;
+  }
+  .header-content-container {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    left: 424px;
+    bottom: 0;
+    width: 350px;
+    height: 600px;
+    padding-bottom: 1rem;
+  }
+  .header-title {
+    color: var(--color-almost-black);
+    font-size: 4.375rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    width: 330px;
+    text-transform: uppercase;
+  }
+  .header-right {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header-right > p {
+    margin-block: 2rem;
+  }
+  .header-location-btn {
+    width: 260px;
+    height: fit-content;
+    position: relative;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 24px;
+  }
+  header img {
+    height: 700px;
+  }
+  article:first-child h2,
+  article:last-child h2 {
+    font-size: 3.125rem;
+    line-height: 2.812rem;
+    width: 223px;
+  }
+  article:first-child p,
+  article:last-child p {
+    font-size: 1.125rem;
+    line-height: 1.75em;
+  }
+  article:first-child h2 {
+    width: 223px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+  footer div > p {
+    width: 281px;
+  }
+  article:first-child p {
+    width: 223px;
+  }
+}
+/* - phone:480px 30rem */
+@media (max-width: 32rem) {
+  #phone {
+    background-color: red;
+  }
 }

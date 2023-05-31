@@ -137,3 +137,25 @@ ul {
 .social-icon svg:hover path {
   fill: white;
 }
+
+@media (min-width: 32.05rem) and (max-width: 48rem) {
+  .container,
+  footer .flex {
+    width: 90%;
+  }
+  h1 {
+    font-size: 3.43rem;
+    line-height: 3.43rem;
+    color: white;
+    width: 250px;
+  }
+  .address p {
+    width: 398px;
+  }
+  footer p {
+    width: 281px;
+  }
+  .btn-container {
+    left: 40px;
+  }
+}
