@@ -194,8 +194,6 @@ ul {
   footer .flex {
     width: 90%;
   }
-  .grid {
-  }
   .black-bg {
     display: none;
   }
@@ -276,7 +274,81 @@ ul {
 }
 /* - phone:480px 30rem */
 @media (max-width: 32rem) {
-  #phone {
-    background-color: red;
+  .header-content-container,
+  .grid,
+  footer .flex {
+    width: 90%;
+  }
+  header img {
+    height: 240px;
+    object-fit: cover;
+  }
+  .header-content-container {
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 600px;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  .header-content-container {
+    position: static;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  .header-right > * {
+    margin-top: 1.5rem;
+  }
+  .header-right {
+    position: static;
+    width: 350px;
+    height: 100%;
+    display: flex;
+  }
+  .header-title {
+    color: var(--color-almost-black);
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 3.43rem;
+    width: 280px;
+    text-transform: uppercase;
+  }
+  .header-location-btn {
+    width: 260px;
+    height: fit-content;
+    position: relative;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    height: 24px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+  }
+  #box2 {
+    order: -1;
+  }
+  #box2 img {
+    height: 100%;
+    object-fit: contain;
+  }
+  footer .flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer p {
+    color: white;
+    width: 100%;
   }
 }

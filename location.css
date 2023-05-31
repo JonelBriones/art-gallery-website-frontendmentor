@@ -159,3 +159,25 @@ ul {
     left: 40px;
   }
 }
+@media (max-width: 32rem) {
+  .btn-container {
+    left: 0;
+  }
+  #section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+  footer .flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer p {
+    color: var(--color-almost-black);
+    width: 90%;
+  }
+}
